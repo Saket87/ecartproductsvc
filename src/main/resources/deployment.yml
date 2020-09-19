@@ -6,9 +6,9 @@ metadata:
     name: ecartproductsvc
 spec:
   ports:
-      port: 8080
-      targetPort: 8080
-      protocol: TCP
+  - port: 8080
+    targetPort: 8080
+    protocol: TCP
   selector:
     app: ecartproductsvc
   type: LoadBalancer
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: ecartproductsvc
-        image: ecartproductsvc:1.0
+        image: 'gcr.io/ecart-290014/ecartproductsvc:1.0'
         ports:
           - containerPort: 8080
         env:
