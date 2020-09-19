@@ -6,7 +6,6 @@ metadata:
     name: ecartproductsvc
 spec:
   ports:
-    - loadBalancer: 30163
       port: 8080
       targetPort: 8080
       protocol: TCP
